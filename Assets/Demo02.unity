@@ -549,19 +549,69 @@ PrefabInstance:
     - target: {fileID: 3535309445039551147, guid: 079115ddf4d390c4393f1c48d0815ade,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3535309445039551149, guid: 079115ddf4d390c4393f1c48d0815ade,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3535309445039551149, guid: 079115ddf4d390c4393f1c48d0815ade,
+        type: 3}
+      propertyPath: RenderingOn
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3535309445995369930, guid: 079115ddf4d390c4393f1c48d0815ade,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4735092645179441382, guid: 079115ddf4d390c4393f1c48d0815ade,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535309444620535763, guid: 079115ddf4d390c4393f1c48d0815ade,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535309444645664882, guid: 079115ddf4d390c4393f1c48d0815ade,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535309444968711480, guid: 079115ddf4d390c4393f1c48d0815ade,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535309444980752958, guid: 079115ddf4d390c4393f1c48d0815ade,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535309445013012323, guid: 079115ddf4d390c4393f1c48d0815ade,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535309445298214724, guid: 079115ddf4d390c4393f1c48d0815ade,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535309445371177549, guid: 079115ddf4d390c4393f1c48d0815ade,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535309445540352469, guid: 079115ddf4d390c4393f1c48d0815ade,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535309446630143894, guid: 079115ddf4d390c4393f1c48d0815ade,
         type: 3}
       propertyPath: m_Enabled
       value: 0
