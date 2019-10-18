@@ -8,7 +8,7 @@ public class DragApplier : MonoBehaviour
 
     private Transform _Trans;
     private Rigidbody _Body;
-    
+
     void Start()
     {
         _Trans = transform;
@@ -21,9 +21,9 @@ public class DragApplier : MonoBehaviour
         {
             var velocitySquared = _Body.velocity.magnitude * _Body.velocity.magnitude;
 
-            var directionFactor = -Vector3.Dot(_Body.velocity.normalized, _Trans.up);
+            var directionFactor = Vector3.Dot(_Body.velocity.normalized, _Trans.up);
 
-            var dragForce = velocitySquared * directionFactor * Drag * _Trans.up;
+            var dragForce = velocitySquared * directionFactor * -_Trans.up * Drag;
 
             _Body.AddForceAtPosition(dragForce, _Trans.position);
         }
