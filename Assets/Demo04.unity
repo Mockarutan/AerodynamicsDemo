@@ -282,7 +282,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5583761028209149448}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &464332845
+--- !u!114 &464332846
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -291,12 +291,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 464332844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18fdb97be2775f2488590ca9040f189f, type: 3}
+  m_Script: {fileID: 11500000, guid: 76d2876d20b5f84448cde5c03aedabbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   WaterHighLevel: 0
   WaterLowLevel: -3
-  ForceMultiply: 300
+  ForceMultiply: -300
   BuoyancyForceCurve:
     serializedVersion: 2
     m_Curve:
@@ -321,7 +321,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  RollForceXMultiply: 3000
+  RollForceXMultiply: 1000
   RollForceZMultiply: 100
   RollForceCurve:
     serializedVersion: 2
@@ -336,13 +336,22 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 2
-      outSlope: 2
+      time: 0.5763887
+      value: 0.07353639
+      inSlope: 0.20249242
+      outSlope: 0.20249242
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
+      outWeight: 0.25943142
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 6.0776
+      outSlope: 6.0776
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.072710246
       outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -771,7 +780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1777342005
 AudioListener:
   m_ObjectHideFlags: 0
@@ -985,7 +994,7 @@ PrefabInstance:
     - target: {fileID: 5583761027533268348, guid: 13e333e6a6235a24b8d0e921a7da343b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9862955
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5583761027533268348, guid: 13e333e6a6235a24b8d0e921a7da343b,
         type: 3}
@@ -1047,11 +1056,6 @@ PrefabInstance:
       propertyPath: Drag
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 8498527827346324320, guid: 13e333e6a6235a24b8d0e921a7da343b,
-        type: 3}
-      propertyPath: Drag
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 5416963059938791309, guid: 13e333e6a6235a24b8d0e921a7da343b,
         type: 3}
       propertyPath: Drag
@@ -1071,6 +1075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Drag
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498527827346324320, guid: 13e333e6a6235a24b8d0e921a7da343b,
+        type: 3}
+      propertyPath: Drag
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1859407640669329907, guid: 13e333e6a6235a24b8d0e921a7da343b,
         type: 3}

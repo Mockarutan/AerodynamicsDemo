@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SubmarineBuoyancy : MonoBehaviour
+public class Buoyancy : MonoBehaviour
 {
     public float WaterHighLevel;
     public float WaterLowLevel;
@@ -29,7 +29,7 @@ public class SubmarineBuoyancy : MonoBehaviour
         if (normWaterLevelDiff > 0)
         {
             float buoyancyForce = BuoyancyForceCurve.Evaluate(normWaterLevelDiff) * ForceMultiply;
-            _Body.AddForce(new Vector3(0, -buoyancyForce, 0));
+            _Body.AddForce(new Vector3(0, buoyancyForce, 0));
         }
 
         float xRollAngle = Mathf.Clamp(Vector3.SignedAngle(_Trans.up, Vector3.up, _Trans.right) / 90, -1, 1);
