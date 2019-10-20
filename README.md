@@ -2,6 +2,7 @@
  
 Slides: https://docs.google.com/presentation/d/1rkt6Wi-hj8_izVCW_WnJQfYYVLe7A3ElTHzX-7n1QX8/edit?usp=sharing
 Contact: Tobias@knackelibang.com
+Twitter: https://twitter.com/TheKnackelibang
 
 * **Demo01**: Just a simple comparison between a body with and without drag. No controls.  
 * **Demo02**: An airplane flying with only drag appliers modeled roughly modeled after the plain, and a add force motor. Controls: WASD & QE.  
