@@ -12,10 +12,12 @@ public class PropellerEngine : MonoBehaviour
 
     public Transform PropellerMesh;
 
+    private Transform _Trans;
     private Rigidbody _Body;
 
     void Start()
     {
+        _Trans = transform;
         _Body = GetComponentInParent<Rigidbody>();
     }
 
@@ -25,7 +27,8 @@ public class PropellerEngine : MonoBehaviour
 
         if (Input.GetKey(FullThottleKey))
         {
-            _Body.AddRelativeForce(new Vector3(0, 0, MaxForce));
+            var worldForce = _Trans.TransformDirection(new Vector3(0, 0, MaxForce));
+            _Body.AddForceAtPosition(worldForce, _Trans.position);
             rotateSpeed = MaxRotateSpeed;
         }
 
