@@ -240,7 +240,7 @@ Transform:
   m_LocalScale: {x: 1000, y: 1, z: 1000}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &323896268
 GameObject:
@@ -415,7 +415,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 20, y: -32.287003, z: 0}
 --- !u!1 &453933143
 GameObject:
@@ -498,7 +498,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -18, y: 0, z: 0}
 --- !u!1 &569435699
 GameObject:
@@ -511,7 +511,6 @@ GameObject:
   - component: {fileID: 569435703}
   - component: {fileID: 569435702}
   - component: {fileID: 569435701}
-  - component: {fileID: 569435700}
   m_Layer: 0
   m_Name: LeafSpawner
   m_TagString: Untagged
@@ -519,19 +518,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &569435700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569435699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58dba5429aa199443a14d32e8fcb1a7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ApplyDrag: 1
 --- !u!65 &569435701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -563,6 +549,7 @@ MonoBehaviour:
   SpawnDelay: 0.005
   ExplosionPosition: {fileID: 797264503}
   ExplosionForce: 5000
+  ExplosionTrigger: 0
   ApplyDrag: 1
 --- !u!4 &569435703
 Transform:
@@ -591,7 +578,6 @@ GameObject:
   - component: {fileID: 613575018}
   - component: {fileID: 613575017}
   - component: {fileID: 613575016}
-  - component: {fileID: 613575019}
   m_Layer: 0
   m_Name: NormalDebrisSpawner
   m_TagString: Untagged
@@ -639,6 +625,7 @@ MonoBehaviour:
   SpawnDelay: 0.05
   ExplosionPosition: {fileID: 38132508}
   ExplosionForce: 2500
+  ExplosionTrigger: 49
   ApplyDrag: 0
 --- !u!4 &613575018
 Transform:
@@ -656,19 +643,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &613575019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613575015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58dba5429aa199443a14d32e8fcb1a7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ApplyDrag: 1
 --- !u!1 &669966961
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +898,6 @@ GameObject:
   - component: {fileID: 1731667014}
   - component: {fileID: 1731667013}
   - component: {fileID: 1731667012}
-  - component: {fileID: 1731667011}
   m_Layer: 0
   m_Name: DebrisSpawnerWithDrag
   m_TagString: Untagged
@@ -932,19 +905,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1731667011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731667010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58dba5429aa199443a14d32e8fcb1a7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ApplyDrag: 1
 --- !u!65 &1731667012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -985,6 +945,7 @@ MonoBehaviour:
   SpawnDelay: 0.05
   ExplosionPosition: {fileID: 669966962}
   ExplosionForce: 7000
+  ExplosionTrigger: 50
   ApplyDrag: 1
 --- !u!4 &1731667014
 Transform:
@@ -1000,7 +961,7 @@ Transform:
   - {fileID: 669966962}
   - {fileID: 772652815}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869978549
 GameObject:
@@ -1091,5 +1052,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}

@@ -861,6 +861,14 @@ MonoBehaviour:
   LookAtTarget: {fileID: 970580852}
   PositionTarget: {fileID: 5583761028209149449}
   MaxDistance: 5
+  RollSpeed: 0
+  MaxRollAngle: 0
+  RollSpeedCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1790910982
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,7 +1002,7 @@ PrefabInstance:
     - target: {fileID: 5583761027533268348, guid: 13e333e6a6235a24b8d0e921a7da343b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.63
       objectReference: {fileID: 0}
     - target: {fileID: 5583761027533268348, guid: 13e333e6a6235a24b8d0e921a7da343b,
         type: 3}

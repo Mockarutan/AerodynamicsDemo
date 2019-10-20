@@ -10,6 +10,7 @@ public class DebrisSpawner : MonoBehaviour
 
     public Transform ExplosionPosition;
     public float ExplosionForce;
+    public KeyCode ExplosionTrigger;
 
     public bool ApplyDrag;
 
@@ -32,7 +33,7 @@ public class DebrisSpawner : MonoBehaviour
             SpawnDebris();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(ExplosionTrigger))
         {
             for (int i = 0; i < _Debris.Count; i++)
                 _Debris[i].GetComponent<Rigidbody>().AddExplosionForce(ExplosionForce, ExplosionPosition.position, 10);
